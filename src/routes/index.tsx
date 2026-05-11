@@ -4,6 +4,9 @@ import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 import { products } from "@/data/products";
 import heroImg from "@/assets/hero.jpg";
+import personImg from "@/assets/person.jpg";
+import eyewear from "@/assets/eyewear.jpg";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -161,15 +164,15 @@ function Home() {
           <div className="grid grid-cols-2 gap-4">
             <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-background">
               <img
-                src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?w=600&q=80"
+                src = {personImg}
                 alt="Person wearing eyewear"
                 loading="lazy"
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover object-right"
               />
             </div>
-            <div className="mt-10 aspect-[4/5] overflow-hidden rounded-2xl bg-background">
+            <div className="mt-10 aspect-[3/5] overflow-hidden rounded-2xl bg-background">
               <img
-                src="https://images.unsplash.com/photo-1582142306909-195724d33ffc?w=600&q=80"
+                src={eyewear}
                 alt="Eyewear flatlay"
                 loading="lazy"
                 className="h-full w-full object-cover"
