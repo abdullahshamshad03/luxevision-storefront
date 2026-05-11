@@ -96,7 +96,7 @@ function ProductDetail() {
                 Color: <span className="text-muted-foreground">{color}</span>
               </p>
               <div className="mt-3 flex flex-wrap gap-2">
-                {product.colors.map((c) => (
+                {product.colors.map((c: string) => (
                   <button
                     key={c}
                     onClick={() => setColor(c)}
